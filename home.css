@@ -1,0 +1,91 @@
+header, nav, main, footer, aside { display: block; }
+* { box-sizing: border-box;}
+body { margin:0;
+       background-color: White; }
+       
+#container { background-color: #eeeeee;
+             color: white;
+             min-width: 1000px;
+             font-family:"Courier New", monospace	
+	
+
+             ; }
+header { background-color: black;
+         background-image: url(sunflower.jpg);
+         background-position: bottom;
+         background-repeat: repeat-x;
+         height: 300px;
+         color: white;
+         text-align: center;
+         padding: 0 20px;
+         border-bottom: 2px solid #000000; }		 
+nav { float: left;
+      width: 240px; }
+aside { float: right;
+        width: 500px; 
+        text-align: left;}
+main { margin: 0 240px 0 240px;
+        padding: 0px 10px 10px 10px;
+        background-color: #020202;
+               }
+footer { font-size: 1.0em;
+         text-align: center;
+         color:white;
+         background-color: #000000;
+         padding-top: 10px;
+         clear: both; }		 
+h1 { margin-top: 0;
+     font-size: 6.5em;
+     text-align: center;
+padding-top: 20px;
+color: white; }	
+h2 { margin-top: 0;
+        font-size: 3.5em;
+        text-align: center;
+        padding-top: 0px;}
+        
+p { margin-top: 0;
+                font-size: 1.5em;
+                text-align: left;
+                padding-top: 0px; }
+                        
+        tr { margin-top: 0;
+                font-size: .9em;
+                text-align: Left;
+                padding-top: 0px; }
+b { margin-top: 0;
+                        font-size: 1.5em;
+                        text-align: left;
+                        padding-top: 0px; }
+header a {font-size: 1.80em; }
+header a:link, header a:visited { color: #96f096; }
+header a:focus, header a:hover { color: #eeeeee; }
+a {
+        color: rgb(241, 168, 57);
+      }
+      p { text-decoration: none;
+        font-size: 1.4em; 
+text-align: left}     
+nav ul { margin-top: 50px;
+         list-style-type: none; }
+nav a { text-decoration: none;
+        font-size: 1.6em; }
+
+nav a:link { color:black;}
+nav a:visited { color: black; }
+nav a:focus, nav a:hover { color: #white; }
+nav a:active { color: #000000;}
+nav img { margin: 10px;}
+main p { margin: 20px; }
+main h2, main h3 { color: orange;
+                   background-color: #000000;
+}
+.floatright { margin: -10px;
+              float: right; }
+aside h3{ padding-bottom: 10px;
+           border-bottom: 1px solid rgb(10, 10, 9);
+           margin: 50px;
+           font-size: 4.0em;
+		   color: Black; }
+.news { font-size: 2.0em;
+        margin: 10px; }	
