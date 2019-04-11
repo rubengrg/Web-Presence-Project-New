@@ -1,0 +1,86 @@
+
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ruben Gurung</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="rg.css" rel="stylesheet">
+<link href="slide.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+  <header role="banner">
+    <center>
+    <h1>Ruben Gurung's Website</h1></center>
+  </header>
+  <nav role="navigation">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="coursework.html">Coursework</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="musicfestival.html">Music Festivals</a></li>
+        <li><a href="combat.html">Combat Sports</a></li>
+        <li><a href="contact.html">Contact </a></li>
+ </nav>
+  <main role="main" id="content">
+    <h2>Music Festivals</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="sa.jpg" style="width:50%">
+          <div class="text">Spring Awakening</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="ef.jpg" style="width:50%">
+          <div class="text">Electric Forest</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="ss.jpg" style="width:50%">
+          <div class="text">Summer Set </div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); 
+        }
+        </script>
+        <footer role="contentinfo"><marquee behavior="scroll" direction="left" scrollamount="6">Welcome to my Webpage</marquee><br>
+    </footer>
+  </main>
+</div> 
+</body>
+</html>
